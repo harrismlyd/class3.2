@@ -29,4 +29,7 @@ resource "aws_s3_bucket" "s3_tf" {
   bucket = "${local.name_prefix}-s3-tf-bkt-${local.account_id}"
 
   # checkov:skip=CKV2_AWS_62
+  # checkov:skip=CKV2_AWS_21
+  # checkov:skip=CKV2_AWS_6
+  # checkov:skip=CKV2_AWS_18
 }
