@@ -27,5 +27,6 @@ locals {
 
 resource "aws_s3_bucket" "s3_tf" {
   bucket = "${local.name_prefix}-s3-tf-bkt-${local.account_id}"
-  # skip-checkov: CKV2_AWS_62
+
+  #checkov:skip=CKV2_AWS_62: "Ensure S3 buckets should have event notifications enabled"
 }
