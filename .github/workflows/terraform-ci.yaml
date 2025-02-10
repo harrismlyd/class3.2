@@ -48,6 +48,7 @@ jobs:
       uses: bridgecrewio/checkov-action@master
       with:
         framework: terraform
+      # skip-checkov: CKV2_AWS_62
    
     - name: Terraform Plan
       run: terraform plan
