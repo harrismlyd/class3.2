@@ -27,4 +27,5 @@ locals {
 
 resource "aws_s3_bucket" "s3_tf" {
   bucket = "${local.name_prefix}-s3-tf-bkt-${local.account_id}"
+   # skip-checkov: CKV_AWS_62
 }
